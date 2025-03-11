@@ -21,7 +21,7 @@ if st.button("Generate Image"):
     # API request
     headers = {"Authorization": f"Bearer {API_KEY}"}
     data = {"prompt": prompt}
-    response = requests.post(FAL_API_URL, json=data, headers=headers)
+    response = requests.get(FAL_API_URL, json=data, headers=headers)
 
     if response.status_code == 200:
         image_url = response.json().get("image_url")
