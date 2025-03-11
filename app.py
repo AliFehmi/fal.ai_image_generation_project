@@ -31,6 +31,6 @@ if st.button("Generate Images"):
     if "images" in result:
         st.success(" Image generation complete!")
         for img in result["images"]:
-            st.image(img["url"], caption="Generated Image", use_column_width=True)
+            st.image(img["url"], caption="Generated Image", use_container_width=True)
     else:
         st.error(" Image generation failed. Try again.")
