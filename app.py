@@ -1,14 +1,14 @@
 import streamlit as st
 import fal_client
-import os
+# import os
 
-# Set API Key (Ensure this is set in your environment)
-if "FAL_KEY" not in os.environ:
-    st.error("❌ API Key missing! Set FAL_KEY as an environment variable.")
-    st.stop()
+# # Set API Key (Ensure this is set in your environment)
+# if "FAL_KEY" not in os.environ:
+#     st.error("❌ API Key missing! Set FAL_KEY as an environment variable.")
+#     st.stop()
 
-# Authenticate with Fal.ai
-fal_client.auth(os.getenv("FAL_KEY"))
+# # Authenticate with Fal.ai
+# fal_client.auth(os.getenv("FAL_KEY"))
 
 # Streamlit UI
 st.title("🖼️ AI Image Generator using Fal.ai")
